@@ -1,3 +1,13 @@
+.main {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .title {
   padding-left: 10px;
 }
