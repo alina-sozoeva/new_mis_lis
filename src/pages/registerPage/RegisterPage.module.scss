@@ -1,13 +1,93 @@
 .main {
   padding: 20px;
+  max-width: 1200px;
+  font-size: 12px;
+
+  :global {
+    .MuiTypography-root,
+    .MuiInputBase-root,
+    .MuiFormLabel-root,
+    .MuiInputLabel-root,
+    .MuiButtonBase-root,
+    .MuiButton-root,
+    .MuiSelect-select,
+    .MuiMenuItem-root,
+    .MuiFormControlLabel-label,
+    .MuiRadio-root,
+    .MuiCheckbox-root {
+      font-size: 12px;
+    }
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .title {
   padding-left: 10px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  :global {
+    textarea.MuiInputBase-input,
+    .textareaOutlined {
+      font-size: 12px;
+    }
+
+    .css-15395ss-MuiPickersSectionList-root-MuiPickersInputBase-sectionsContainer-MuiPickersOutlinedInput-sectionsContainer {
+      font-size: 12px;
+    }
+
+    // textarea#{/* no-op to avoid accidental selector end */} {}
+
+    .MuiTypography-root,
+    .MuiInputBase-root,
+    .MuiFormLabel-root,
+    .MuiInputLabel-root,
+    .MuiButtonBase-root,
+    .MuiSelect-select,
+    .MuiMenuItem-root,
+    .MuiFormControlLabel-label,
+    .MuiRadio-root,
+    .MuiCheckbox-root {
+      font-size: 12px;
+    }
+
+    .css-1j615le-MuiInputBase-input-MuiOutlinedInput-input {
+      padding: 15px;
+      height: auto;
+    }
+  }
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  resize: vertical;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  background-color: #fff;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+  }
 }
