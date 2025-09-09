@@ -1,3 +1,63 @@
 :root {
   --white-color: #ffffff;
 }
+ .css-45jgls-JoyFormControl-root {
+  margin-bottom: 0 !important;
+}
+ 
+.css-dq3jzk-JoyGrid-root, .css-1li3ky8-JoyGrid-root, .css-11lmru0-JoyGrid-root, .css-1dc0y22-JoyGrid-root, .css-395gs7-JoyGrid-root {
+padding: 0px 4px 0px 0px !important; 
+}
+.css-1tvwywe-JoyFormLabel-root {
+    margin-bottom: 2px;
+}
+.css-171baeu {
+  padding: 0 0 0 2px !important;
+}
+.css-rfap41-JoyFormLabel-root {
+  margin-bottom: 0 !important;
+}
+
+.css-nxt0w6-JoyFormControl-root {
+  flex-direction: row !important;
+  --FormLabel-alignSelf: center !important;
+  margin-bottom: 0 !important;
+  gap: 10px !important;
+}
+.filter-grid div {
+  flex-direction: column !important;
+  --FormLabel-alignSelf: flex-start !important
+}
+.css-1i3kmky-MuiList-root {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}
+.css-1r7kayp-JoyGrid-root {
+  margin-bottom: 0 !important;
+}
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background: #89c3fd6b !important;
+}
+.css-1llfsgr {
+  margin-top: 57px !important;
+}
+.css-1tmjhoy-JoyInput-root {
+  padding-left: 16px  !important;
+  padding-right: 16px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.css-rxmz76-JoyGrid-root {
+  padding: 0 15px !important;
+}
+.css-vsne6h-MuiSvgIcon-root, .css-155whtw-MuiSvgIcon-root {
+  fill: #185EA5 !important;
+}
+.css-trclr8-MuiTreeItem-root .MuiTreeItem-groupTransition {
+  border-left: 1px dashed #185EA5 !important;
+}

@@ -11,6 +11,7 @@ import {
   Medications,
 } from "../../tabs";
 
+
 function TabPanel({ children, value, index }) {
   return (
     <div role="tabpanel" hidden={value !== index}>

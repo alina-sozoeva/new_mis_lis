@@ -8,7 +8,7 @@ import {
   Button,
 } from "@mui/joy";
 import Inputs from "../../components/Editors/inputs.jsx";
-import styles from "../../components/Passport/Passport.module.scss";
+import styles from "./Passport.module.scss";
 
 export const Passport = () => {
   const { handleSubmit } = useForm();
@@ -34,7 +34,9 @@ export const Passport = () => {
         }}
       >
         {/* Заголовок */}
- 
+        <Typography level="h4" sx={{ mb: 3, fontWeight: 600 }}>
+          Регистрация
+        </Typography>
 
         <Grid container spacing={2}>
           {/* ИНН */}
@@ -62,10 +64,7 @@ export const Passport = () => {
             <Inputs label="Медицинское учреждение" labelPosition="left" placeholder="Название учреждения" />
           </Grid>
 
-          {/* Корпоративный клиент */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={4}>
-            <Inputs label="Корпоративный клиент" labelPosition="left" type="checkbox" />
-          </Grid>
+      sderdfsxvf
  {/* Адрес */}
           <Grid style={{marginBottom:"0"}} xs={7}>
             <Inputs label="Адрес" labelPosition="left" placeholder="Введите адрес" />
