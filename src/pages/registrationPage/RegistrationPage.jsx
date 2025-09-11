@@ -10,7 +10,8 @@ import {
   Lis,
   Medications,
 } from "../../tabs";
-
+import { registrationTabs } from "../../data";
+import { useTranslation } from "react-i18next";
 
 function TabPanel({ children, value, index }) {
   return (
@@ -21,17 +22,7 @@ function TabPanel({ children, value, index }) {
 }
 
 export const RegistrationPage = () => {
-  const tabLabels = [
-    "Паспортные данные",
-    "Амбулаторная",
-    "Оплата",
-    "История",
-    "Звонки",
-    "Обращение",
-    "ЛИС",
-    "Медикаменты",
-  ];
-
+  const { t } = useTranslation();
   const tabComponents = [
     <Passport />,
     <Ambulatory />,
@@ -58,8 +49,8 @@ export const RegistrationPage = () => {
         scrollButtons="auto"
         sx={{ borderBottom: 1, borderColor: "divider" }}
       >
-        {tabLabels.map((label, index) => (
-          <Tab key={index} label={label} />
+        {registrationTabs.map((label, index) => (
+          <Tab key={index} label={t(label.label)} />
         ))}
       </Tabs>
 

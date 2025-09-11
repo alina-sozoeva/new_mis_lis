@@ -1,0 +1,149 @@
+{
+  "menu": {
+    "calendar": "Күнтізбе",
+    "registration": "Тіркеу",
+    "registry": "Тіркелім",
+    "treatment": "Емдеу",
+    "stationary": "Стационар",
+    "lis": "ЛИС",
+    "medications": "Дәрі-дәрмектер",
+    "reports": "Есептер",
+    "analytics": "Талдау",
+    "settings": "Баптаулар",
+    "help": "Көмек"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Паспорт деректері",
+      "ambulatory": "Амбулатория",
+      "payment": "Төлем",
+      "history": "Тарих",
+      "calls": "Қоңыраулар",
+      "education": "Өтініш",
+      "lis": "ЛИС",
+      "medications": "Дәрі-дәрмектер"
+    }
+  },
+  "common": {
+    "buttons": {
+      "cancel": "Болдырмау",
+      "save": "Сақтау",
+      "update": "Жаңарту",
+      "search": "Іздеу",
+      "clear": "Тазалау",
+      "generate": "Есеп жасау",
+      "export": "Excel экспорт"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": { "label": "ЖСН", "placeholder": "ЖСН енгізіңіз" },
+      "patientName": {
+        "label": "Пациенттің аты-жөні",
+        "placeholder": "Тегі Аты Әкесінің аты"
+      },
+      "birthDate": { "label": "Туған күні", "placeholder": "КК.АА.ЖЖЖЖ" },
+      "doctorName": {
+        "label": "Дәрігердің аты-жөні",
+        "placeholder": "Дәрігердің ФИО"
+      },
+      "hospital": {
+        "label": "Медициналық мекеме",
+        "placeholder": "Мекеменің атауы"
+      },
+      "corporate": { "label": "Корпоративтік клиент", "placeholder": "" },
+      "address": {
+        "label": "Мекен-жай",
+        "placeholder": "Мекен-жайды енгізіңіз"
+      },
+      "gender": { "label": "Жыныс", "male": "Ер", "female": "Әйел" },
+      "phone": { "label": "Телефон", "placeholder": "+996 XXX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "example@mail.com" },
+      "diagnosis": { "label": "Диагноз", "placeholder": "Диагнозды енгізіңіз" },
+      "note": {
+        "label": "Регистрлатор ескертпесі",
+        "placeholder": "Сіздің пікіріңіз..."
+      },
+      "discountPercent": { "label": "Жеңілдік (%)", "placeholder": "0" },
+      "discountAmount": { "label": "Жеңілдік сомасы", "placeholder": "0" },
+      "card": { "label": "Дисконт карта", "placeholder": "Карта нөмірі" },
+      "collector": {
+        "label": "Үлгіні алған адамның ФИО",
+        "placeholder": "ФИО енгізіңіз"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "Басталу",
+      "to": "Аяқтау",
+      "inn": { "label": "Пациенттің ЖСН", "placeholder": "ЖСН енгізіңіз" },
+      "fio": { "label": "Пациенттің аты-жөні", "placeholder": "ФИО енгізіңіз" },
+      "phone": {
+        "label": "Пациенттің телефоны",
+        "placeholder": "Телефон енгізіңіз"
+      },
+      "qr": { "placeholder": "QR код бойынша іздеу" }
+    },
+    "analysis": {
+      "department": "Бөлім",
+      "number": "Нөмір",
+      "analysis": "Талдау",
+      "package": "Пакет",
+      "cito": "CITO"
+    },
+    "table": {
+      "columns": {
+        "date": "Тіркеу күні",
+        "corCode": "Кор. код",
+        "fio": "ФИО",
+        "inn": "ЖСН",
+        "gen": "Жыныс",
+        "dateBirth": "Туу күні",
+        "phone": "Телефон",
+        "email": "Email",
+        "address": "Мекен-жай",
+        "diagnoz": "Диагноз",
+        "comm": "Пікір",
+        "punkt": "Пункт",
+        "skidka": "Жеңілдік",
+        "percent": "%",
+        "reg": "Рег.",
+        "corpClient": "Корп.",
+        "medUch": "Мед.",
+        "doctor": "Дәрігер"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Атауы",
+      "form": "Шығарылу формасы",
+      "dosage": "Доза",
+      "quantity": "Саны",
+      "price": "Бағасы",
+      "manufacturer": "Өндіруші"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Іздеу",
+      "from": "Басталу",
+      "to": "Аяқталу"
+    },
+    "table": {
+      "date": "Күні",
+      "corCode": "Кор. Код",
+      "fio": "Аты-жөні",
+      "inn": "ИНН",
+      "gen": "Жынысы",
+      "dateBirth": "Туған күні",
+      "phone": "Телефон",
+      "email": "Email",
+      "punkt": "Пункт",
+      "skidka": "Жеңілдік",
+      "reg": "Рег.",
+      "doctor": "Дәрігер"
+    }
+  }
+}

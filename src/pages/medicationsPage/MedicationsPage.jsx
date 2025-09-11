@@ -1,14 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import UniversalTable from "../../components/Editors/table.jsx";
 
 export const MedicationsPage = () => {
+  const { t } = useTranslation();
+
   const columns = [
-    { field: "name", label: "Название" },
-    { field: "form", label: "Форма выпуска" },
-    { field: "dosage", label: "Дозировка" },
-    { field: "quantity", label: "Количество" },
-    { field: "price", label: "Цена" },
-    { field: "manufacturer", label: "Производитель" },
+    { field: "name", label: t("medications.table.name") },
+    { field: "form", label: t("medications.table.form") },
+    { field: "dosage", label: t("medications.table.dosage") },
+    { field: "quantity", label: t("medications.table.quantity") },
+    { field: "price", label: t("medications.table.price") },
+    { field: "manufacturer", label: t("medications.table.manufacturer") },
   ];
 
   const rows = [
@@ -40,7 +43,6 @@ export const MedicationsPage = () => {
 
   return (
     <div style={{ padding: 16 }}>
-     
       <UniversalTable columns={columns} rows={rows} />
     </div>
   );

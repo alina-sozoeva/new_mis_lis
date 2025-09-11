@@ -1,0 +1,143 @@
+{
+  "menu": {
+    "calendar": "Təqvim",
+    "registration": "Qeydiyyat",
+    "registry": "Reyestr",
+    "treatment": "Müalicə",
+    "stationary": "Stasionar",
+    "lis": "LIS",
+    "medications": "Dərmanlar",
+    "reports": "Hesabatlar",
+    "analytics": "Analitika",
+    "settings": "Parametrlər",
+    "help": "Kömək"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Pasport məlumatları",
+      "ambulatory": "Ambulatoriya",
+      "payment": "Ödəniş",
+      "history": "Tarixçə",
+      "calls": "Zənglər",
+      "education": "Müraciət",
+      "lis": "LIS",
+      "medications": "Dərmanlar"
+    }
+  },
+  "common": {
+    "buttons": {
+      "cancel": "Ləğv et",
+      "save": "Yadda saxla",
+      "update": "Yenilə",
+      "search": "Axtar",
+      "clear": "Təmizlə",
+      "generate": "Hesabat yarat",
+      "export": "Excel-ə ixrac"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": { "label": "VÖEN", "placeholder": "VÖEN daxil edin" },
+      "patientName": {
+        "label": "Xəstənin adı",
+        "placeholder": "Soyad Ad Ata adı"
+      },
+      "birthDate": { "label": "Doğum tarixi", "placeholder": "GG.AA.İİİİ" },
+      "doctorName": {
+        "label": "Həkimin adı",
+        "placeholder": "Həkimin adını daxil edin"
+      },
+      "hospital": {
+        "label": "Tibbi müəssisə",
+        "placeholder": "Müəssisənin adı"
+      },
+      "corporate": { "label": "Korporativ müştəri", "placeholder": "" },
+      "address": { "label": "Ünvan", "placeholder": "Ünvan daxil edin" },
+      "gender": { "label": "Cins", "male": "Kişi", "female": "Qadın" },
+      "phone": { "label": "Telefon", "placeholder": "+996 XXX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "example@mail.com" },
+      "diagnosis": { "label": "Diaqnoz", "placeholder": "Diaqnozu daxil edin" },
+      "note": { "label": "Qeydiyyatçı qeydi", "placeholder": "Şərhiniz..." },
+      "discountPercent": { "label": "Endirim (%)", "placeholder": "0" },
+      "discountAmount": { "label": "Endirim məbləği", "placeholder": "0" },
+      "card": { "label": "Endirim kartı", "placeholder": "Kart nömrəsi" },
+      "collector": {
+        "label": "Nümunəni götürənin adı",
+        "placeholder": "Ad daxil edin"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "Başlanğıc",
+      "to": "Son",
+      "inn": { "label": "Xəstənin VÖEN", "placeholder": "VÖEN daxil edin" },
+      "fio": { "label": "Xəstənin adı", "placeholder": "Tam adı daxil edin" },
+      "phone": {
+        "label": "Xəstənin telefonu",
+        "placeholder": "Telefon daxil edin"
+      },
+      "qr": { "placeholder": "QR kod üzrə axtar" }
+    },
+    "analysis": {
+      "department": "Şöbə",
+      "number": "Nömrə",
+      "analysis": "Təhlil",
+      "package": "Paket",
+      "cito": "CITO"
+    },
+    "table": {
+      "columns": {
+        "date": "Qeydiyyat tarixi",
+        "corCode": "Kor. kod",
+        "fio": "Ad",
+        "inn": "VÖEN",
+        "gen": "Cins",
+        "dateBirth": "Doğum tarixi",
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Ünvan",
+        "diagnoz": "Diaqnoz",
+        "comm": "Şərh",
+        "punkt": "Punkt",
+        "skidka": "Endirim",
+        "percent": "%",
+        "reg": "Reg.",
+        "corpClient": "Korp.",
+        "medUch": "Med.",
+        "doctor": "Həkim"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Adı",
+      "form": "Buraxılış forması",
+      "dosage": "Doza",
+      "quantity": "Miqdar",
+      "price": "Qiymət",
+      "manufacturer": "İstehsalçı"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Axtar",
+      "from": "Başlanğıc",
+      "to": "Son"
+    },
+    "table": {
+      "date": "Tarix",
+      "corCode": "Kor. Kod",
+      "fio": "Tam adı",
+      "inn": "INN",
+      "gen": "Cins",
+      "dateBirth": "Doğum tarixi",
+      "phone": "Telefon",
+      "email": "Email",
+      "punkt": "Punkt",
+      "skidka": "Endirim",
+      "reg": "Reg.",
+      "doctor": "Həkim"
+    }
+  }
+}

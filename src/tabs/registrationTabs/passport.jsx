@@ -1,16 +1,12 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import {
-  CssVarsProvider,
-  Typography,
-  Grid,
-  Divider,
-  Button,
-} from "@mui/joy";
+import { CssVarsProvider, Typography, Grid, Divider, Button } from "@mui/joy";
 import Inputs from "../../components/Editors/inputs.jsx";
 import styles from "../../components/Passport/Passport.module.scss";
+import { useTranslation } from "react-i18next";
 
 export const Passport = () => {
+  const { t } = useTranslation(); // перевод
   const { handleSubmit } = useForm();
   const [selectedValue, setSelectedValue] = useState("male");
 
@@ -19,6 +15,11 @@ export const Passport = () => {
   const handleGenderChange = (event) => {
     setSelectedValue(event.target.value);
   };
+
+  const tField = (key) => ({
+    label: t(`passport.fields.${key}.label`),
+    placeholder: t(`passport.fields.${key}.placeholder`),
+  });
 
   return (
     <CssVarsProvider>
@@ -30,50 +31,55 @@ export const Passport = () => {
           padding: "30px",
           background: "#fff",
           borderRadius: "16px",
-          marginTop: "20px"
+          marginTop: "20px",
         }}
       >
         {/* Заголовок */}
- 
 
         <Grid container spacing={2}>
           {/* ИНН */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ИНН" required labelPosition="left" placeholder="Введите ИНН" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("inn")} required labelPosition="left" />
           </Grid>
 
           {/* ФИО пациента */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ФИО пациента" labelPosition="left" placeholder="Фамилия Имя Отчество" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("patientName")} labelPosition="left" />
           </Grid>
 
           {/* Дата рождения */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Дата рождения" labelPosition="left" placeholder="ДД.ММ.ГГГГ" type="date" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("birthDate")} labelPosition="left" type="date" />
           </Grid>
 
           {/* ФИО врача */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ФИО врача" labelPosition="left" placeholder="Введите ФИО врача" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("doctorName")} labelPosition="left" />
           </Grid>
 
           {/* Медицинское учреждение */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={8}>
-            <Inputs label="Медицинское учреждение" labelPosition="left" placeholder="Название учреждения" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={8}>
+            <Inputs {...tField("hospital")} labelPosition="left" />
           </Grid>
 
           {/* Корпоративный клиент */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={4}>
-            <Inputs label="Корпоративный клиент" labelPosition="left" type="checkbox" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={4}>
+            <Inputs
+              {...tField("corporate")}
+              labelPosition="left"
+              type="checkbox"
+            />
           </Grid>
- {/* Адрес */}
-          <Grid style={{marginBottom:"0"}} xs={7}>
-            <Inputs label="Адрес" labelPosition="left" placeholder="Введите адрес" />
+
+          {/* Адрес */}
+          <Grid style={{ marginBottom: "0" }} xs={7}>
+            <Inputs {...tField("address")} labelPosition="left" />
           </Grid>
+
           {/* Пол */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={5}>
+          <Grid style={{ marginBottom: "0" }} xs={12} md={5}>
             <Typography level="body-sm" sx={{ mb: 1 }}>
-              Пол
+              {t("passport.fields.gender.label")}
             </Typography>
             <div style={{ display: "flex", gap: "20px" }}>
               <label>
@@ -84,7 +90,7 @@ export const Passport = () => {
                   checked={selectedValue === "male"}
                   onChange={handleGenderChange}
                 />{" "}
-                Мужской
+                {t("passport.fields.gender.male")}
               </label>
               <label>
                 <input
@@ -94,61 +100,69 @@ export const Passport = () => {
                   checked={selectedValue === "female"}
                   onChange={handleGenderChange}
                 />{" "}
-                Женский
+                {t("passport.fields.gender.female")}
               </label>
             </div>
           </Grid>
 
-         
-
           {/* Телефон */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Телефон" labelPosition="left" placeholder="+996 XXX XX XX XX" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("phone")} labelPosition="left" />
           </Grid>
 
           {/* Email */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Email" labelPosition="left" placeholder="example@mail.com" type="email" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("email")} labelPosition="left" type="email" />
           </Grid>
 
           {/* Диагноз */}
-          <Grid style={{marginBottom:"0"}} xs={12}>
-            <Inputs label="Диагноз" labelPosition="left" placeholder="Введите диагноз" />
+          <Grid style={{ marginBottom: "0" }} xs={12}>
+            <Inputs {...tField("diagnosis")} labelPosition="left" />
           </Grid>
 
           {/* Примечание */}
-          <Grid style={{marginBottom:"0"}} xs={12}>
-            <Inputs label="Примечание регистратора" labelPosition="left" placeholder="Ваш комментарий..." />
+          <Grid style={{ marginBottom: "0" }} xs={12}>
+            <Inputs {...tField("note")} labelPosition="left" />
           </Grid>
 
           {/* Скидка */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Скидка (%)" labelPosition="left" placeholder="0" type="number" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              {...tField("discountPercent")}
+              labelPosition="left"
+              type="number"
+            />
           </Grid>
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Сумма скидки" labelPosition="left" placeholder="0" type="number" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              {...tField("discountAmount")}
+              labelPosition="left"
+              type="number"
+            />
           </Grid>
 
           {/* Дисконтная карта */}
-          <Grid style={{marginBottom:"0"}}  xs={12} md={6}>
-            <Inputs label="Дисконтная карта" labelPosition="left" placeholder="Номер карты" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("card")} labelPosition="left" />
           </Grid>
 
           {/* ФИО проводившего забор */}
-          <Grid style={{marginBottom:"0"}}  xs={12} md={6}>
-            <Inputs label="ФИО проводившего забор" labelPosition="left" placeholder="Введите ФИО" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs {...tField("collector")} labelPosition="left" />
           </Grid>
         </Grid>
 
         <Divider sx={{ my: 3 }} />
 
         {/* Кнопки */}
-        <div style={{ display: "flex", gap: "12px", justifyContent: "flex-end" }}>
+        <div
+          style={{ display: "flex", gap: "12px", justifyContent: "flex-end" }}
+        >
           <Button variant="outlined" color="neutral">
-            Отмена
+            {t("common.buttons.cancel")}
           </Button>
           <Button type="submit" variant="solid" color="primary">
-            Сохранить
+            {t("common.buttons.save")}
           </Button>
         </div>
       </form>

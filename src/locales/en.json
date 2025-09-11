@@ -1,0 +1,141 @@
+{
+  "menu": {
+    "calendar": "Calendar",
+    "registration": "Registration",
+    "registry": "Registry",
+    "treatment": "Treatment",
+    "stationary": "Inpatient",
+    "lis": "LIS",
+    "medications": "Medications",
+    "reports": "Reports",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Passport data",
+      "ambulatory": "Ambulatory",
+      "payment": "Payment",
+      "history": "History",
+      "calls": "Calls",
+      "education": "Appeal",
+      "lis": "LIS",
+      "medications": "Medications"
+    }
+  },
+  "common": {
+    "buttons": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "update": "Update",
+      "search": "Search",
+      "clear": "Clear",
+      "generate": "Generate Report",
+      "export": "Export to Excel"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": { "label": "INN", "placeholder": "Enter INN" },
+      "patientName": {
+        "label": "Patient Name",
+        "placeholder": "Last Name First Name Middle Name"
+      },
+      "birthDate": { "label": "Birth Date", "placeholder": "DD.MM.YYYY" },
+      "doctorName": {
+        "label": "Doctor Name",
+        "placeholder": "Enter Doctor Name"
+      },
+      "hospital": {
+        "label": "Medical Institution",
+        "placeholder": "Institution Name"
+      },
+      "corporate": { "label": "Corporate Client", "placeholder": "" },
+      "address": { "label": "Address", "placeholder": "Enter address" },
+      "gender": { "label": "Gender", "male": "Male", "female": "Female" },
+      "phone": { "label": "Phone", "placeholder": "+996 XXX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "example@mail.com" },
+      "diagnosis": { "label": "Diagnosis", "placeholder": "Enter diagnosis" },
+      "note": { "label": "Registrar Note", "placeholder": "Your comment..." },
+      "discountPercent": { "label": "Discount (%)", "placeholder": "0" },
+      "discountAmount": { "label": "Discount Amount", "placeholder": "0" },
+      "card": { "label": "Discount Card", "placeholder": "Card Number" },
+      "collector": {
+        "label": "Sample Collector Name",
+        "placeholder": "Enter Name"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "From",
+      "to": "To",
+      "inn": { "label": "Patient INN", "placeholder": "Enter INN" },
+      "fio": { "label": "Patient Name", "placeholder": "Enter Full Name" },
+      "phone": { "label": "Patient Phone", "placeholder": "Enter phone" },
+      "qr": { "placeholder": "Search by QR code" }
+    },
+    "analysis": {
+      "department": "Department",
+      "number": "Number",
+      "analysis": "Analysis",
+      "package": "Package",
+      "cito": "CITO"
+    },
+
+    "table": {
+      "columns": {
+        "date": "Reg. Date",
+        "corCode": "Cor. Code",
+        "fio": "Name",
+        "inn": "INN",
+        "gen": "Gender",
+        "dateBirth": "Birth Date",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "diagnoz": "Diagnosis",
+        "comm": "Comment",
+        "punkt": "Point",
+        "skidka": "Discount",
+        "percent": "%",
+        "reg": "Reg.",
+        "corpClient": "Corp.",
+        "medUch": "Med.",
+        "doctor": "Doctor"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Name",
+      "form": "Form",
+      "dosage": "Dosage",
+      "quantity": "Quantity",
+      "price": "Price",
+      "manufacturer": "Manufacturer"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Search",
+      "from": "From",
+      "to": "To"
+    },
+    "table": {
+      "date": "Date",
+      "corCode": "Cor. Code",
+      "fio": "Full Name",
+      "inn": "INN",
+      "gen": "Gender",
+      "dateBirth": "Birth Date",
+      "phone": "Phone",
+      "email": "Email",
+      "punkt": "Point",
+      "skidka": "Discount",
+      "reg": "Reg.",
+      "doctor": "Doctor"
+    }
+  }
+}

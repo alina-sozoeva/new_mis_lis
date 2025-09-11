@@ -1,0 +1,179 @@
+{
+  "menu": {
+    "calendar": "Календарь",
+    "registration": "Регистрация",
+    "registry": "Реестр",
+    "treatment": "Лечение",
+    "stationary": "Стационар",
+    "lis": "ЛИС",
+    "medications": "Медикаменты",
+    "reports": "Отчёты",
+    "analytics": "Аналитика",
+    "settings": "Настройки",
+    "help": "Помощь"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Паспортные данные",
+      "ambulatory": "Амбулаторная",
+      "payment": "Оплата",
+      "history": "История",
+      "calls": "Звонки",
+      "education": "Обращение",
+      "lis": "ЛИС",
+      "medications": "Медикаменты"
+    }
+  },
+
+  "common": {
+    "buttons": {
+      "cancel": "Отмена",
+      "save": "Сохранить",
+      "update": "Обновить",
+      "search": "Найти",
+      "clear": "Очистить",
+      "generate": "Сформировать отчет",
+      "export": "Экспорт в Excel"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": {
+        "label": "ИНН",
+        "placeholder": "Введите ИНН"
+      },
+      "patientName": {
+        "label": "ФИО пациента",
+        "placeholder": "Фамилия Имя Отчество"
+      },
+      "birthDate": {
+        "label": "Дата рождения",
+        "placeholder": "ДД.ММ.ГГГГ"
+      },
+      "doctorName": {
+        "label": "ФИО врача",
+        "placeholder": "Введите ФИО врача"
+      },
+      "hospital": {
+        "label": "Медицинское учреждение",
+        "placeholder": "Название учреждения"
+      },
+      "corporate": {
+        "label": "Корпоративный клиент"
+      },
+      "address": {
+        "label": "Адрес",
+        "placeholder": "Введите адрес"
+      },
+      "gender": {
+        "male": "Мужской",
+        "female": "Женский"
+      },
+      "phone": {
+        "label": "Телефон",
+        "placeholder": "+996 XXX XX XX XX"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@mail.com"
+      },
+      "diagnosis": {
+        "label": "Диагноз",
+        "placeholder": "Введите диагноз"
+      },
+      "note": {
+        "label": "Примечание регистратора",
+        "placeholder": "Ваш комментарий..."
+      },
+      "discountPercent": {
+        "label": "Скидка (%)",
+        "placeholder": "0"
+      },
+      "discountAmount": {
+        "label": "Сумма скидки",
+        "placeholder": "0"
+      },
+      "card": {
+        "label": "Дисконтная карта",
+        "placeholder": "Номер карты"
+      },
+      "collector": {
+        "label": "ФИО проводившего забор",
+        "placeholder": "Введите ФИО"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "От",
+      "to": "До",
+      "inn": { "label": "ИНН пациента", "placeholder": "Введите ИНН" },
+      "fio": { "label": "ФИО пациента", "placeholder": "Введите ФИО" },
+      "phone": {
+        "label": "Телефон пациента",
+        "placeholder": "Введите телефон"
+      },
+      "qr": { "placeholder": "Поиск по qr-коду" }
+    },
+    "analysis": {
+      "department": "Отдел",
+      "number": "Номер",
+      "analysis": "Анализ",
+      "package": "Пакет",
+      "cito": "ЦИТО"
+    },
+    "table": {
+      "columns": {
+        "date": "Дата Рег.",
+        "corCode": "Кор. код",
+        "fio": "ФИО",
+        "inn": "ИНН",
+        "gen": "Пол",
+        "dateBirth": "Дата рож.",
+        "phone": "Телефон",
+        "email": "Email",
+        "address": "Адрес",
+        "diagnoz": "Диагноз",
+        "comm": "Комментарий",
+        "punkt": "Пункт",
+        "skidka": "Скид.",
+        "percent": "%",
+        "reg": "Рег.",
+        "corpClient": "Корп.",
+        "medUch": "Мед. уч",
+        "doctor": "Доктор"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Название",
+      "form": "Форма выпуска",
+      "dosage": "Дозировка",
+      "quantity": "Количество",
+      "price": "Цена",
+      "manufacturer": "Производитель"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Поиск",
+      "from": "От",
+      "to": "До"
+    },
+    "table": {
+      "date": "Дата",
+      "corCode": "Кор. Код",
+      "fio": "ФИО",
+      "inn": "ИНН",
+      "gen": "Пол",
+      "dateBirth": "Дата Рожд.",
+      "phone": "Телефон",
+      "email": "Email",
+      "punkt": "Пункт",
+      "skidka": "Скидка",
+      "reg": "Рег.",
+      "doctor": "Доктор"
+    }
+  }
+}

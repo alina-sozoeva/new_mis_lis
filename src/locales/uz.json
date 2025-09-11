@@ -1,0 +1,146 @@
+{
+  "menu": {
+    "calendar": "Kalendar",
+    "registration": "Ro'yxatdan o'tish",
+    "registry": "Reyestr",
+    "treatment": "Davolash",
+    "stationary": "Statsionar",
+    "lis": "LIS",
+    "medications": "Dori vositalari",
+    "reports": "Hisobotlar",
+    "analytics": "Tahlil",
+    "settings": "Sozlamalar",
+    "help": "Yordam"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Pasport ma'lumotlari",
+      "ambulatory": "Ambulatoriya",
+      "payment": "To'lov",
+      "history": "Tarix",
+      "calls": "Qo'ng'iroqlar",
+      "education": "Murojaat",
+      "lis": "LIS",
+      "medications": "Dori vositalari"
+    }
+  },
+  "common": {
+    "buttons": {
+      "cancel": "Bekor qilish",
+      "save": "Saqlash",
+      "update": "Yangilash",
+      "search": "Qidirish",
+      "clear": "Tozalash",
+      "generate": "Hisobot yaratish",
+      "export": "Excel ga eksport"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": { "label": "STIR", "placeholder": "STIR ni kiriting" },
+      "patientName": {
+        "label": "Bemorning ismi",
+        "placeholder": "Familiya Ism Otasining ismi"
+      },
+      "birthDate": { "label": "Tug'ilgan sana", "placeholder": "DD.MM.YYYY" },
+      "doctorName": {
+        "label": "Shifokor ismi",
+        "placeholder": "Shifokor ismini kiriting"
+      },
+      "hospital": {
+        "label": "Tibbiy muassasa",
+        "placeholder": "Muassasa nomi"
+      },
+      "corporate": { "label": "Korporativ mijoz", "placeholder": "" },
+      "address": { "label": "Manzil", "placeholder": "Manzilni kiriting" },
+      "gender": { "label": "Jins", "male": "Erkak", "female": "Ayol" },
+      "phone": { "label": "Telefon", "placeholder": "+996 XXX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "example@mail.com" },
+      "diagnosis": { "label": "Diagnoz", "placeholder": "Diagnozni kiriting" },
+      "note": { "label": "Registrator izohi", "placeholder": "Izohingiz..." },
+      "discountPercent": { "label": "Chegirma (%)", "placeholder": "0" },
+      "discountAmount": { "label": "Chegirma summasi", "placeholder": "0" },
+      "card": { "label": "Diskont karta", "placeholder": "Karta raqami" },
+      "collector": {
+        "label": "Namuna olgan shaxsning FIO",
+        "placeholder": "FIO kiriting"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "Dan",
+      "to": "Gacha",
+      "inn": { "label": "Bemor STIR", "placeholder": "STIR ni kiriting" },
+      "fio": {
+        "label": "Bemorning ismi",
+        "placeholder": "To‘liq ism kiriting"
+      },
+      "phone": {
+        "label": "Bemorning telefoni",
+        "placeholder": "Telefon kiriting"
+      },
+      "qr": { "placeholder": "QR kod bo‘yicha qidirish" }
+    },
+    "analysis": {
+      "department": "Bo‘lim",
+      "number": "Raqam",
+      "analysis": "Tahlil",
+      "package": "Paket",
+      "cito": "CITO"
+    },
+    "table": {
+      "columns": {
+        "date": "Ro‘yxat sanasi",
+        "corCode": "Kor. kod",
+        "fio": "Ism",
+        "inn": "STIR",
+        "gen": "Jins",
+        "dateBirth": "Tug‘ilgan sana",
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Manzil",
+        "diagnoz": "Diagnoz",
+        "comm": "Izoh",
+        "punkt": "Punkt",
+        "skidka": "Chegirma",
+        "percent": "%",
+        "reg": "Reg.",
+        "corpClient": "Korp.",
+        "medUch": "Med.",
+        "doctor": "Shifokor"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Nomi",
+      "form": "Chiqarilish shakli",
+      "dosage": "Doza",
+      "quantity": "Soni",
+      "price": "Narxi",
+      "manufacturer": "Ishlab chiqaruvchi"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Qidirish",
+      "from": "Dan",
+      "to": "Gacha"
+    },
+    "table": {
+      "date": "Sana",
+      "corCode": "Kor. Kod",
+      "fio": "To‘liq ism",
+      "inn": "INN",
+      "gen": "Jins",
+      "dateBirth": "Tug‘ilgan sana",
+      "phone": "Telefon",
+      "email": "Email",
+      "punkt": "Punkt",
+      "skidka": "Chegirma",
+      "reg": "Reg.",
+      "doctor": "Shifokor"
+    }
+  }
+}

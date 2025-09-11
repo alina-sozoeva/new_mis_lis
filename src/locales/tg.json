@@ -1,0 +1,149 @@
+{
+  "menu": {
+    "calendar": "Тақвим",
+    "registration": "Бақайдгирӣ",
+    "registry": "Феҳрист",
+    "treatment": "Муолиҷа",
+    "stationary": "Беморхонаи статсионарӣ",
+    "lis": "ЛИС",
+    "medications": "Доруҳо",
+    "reports": "Ҳисоботҳо",
+    "analytics": "Таҳлил",
+    "settings": "Танзимот",
+    "help": "Кумак"
+  },
+  "tabs": {
+    "registration": {
+      "passport": "Маълумоти шиноснома",
+      "ambulatory": "Амбулаторӣ",
+      "payment": "Пардохт",
+      "history": "Таърих",
+      "calls": "Зангҳо",
+      "education": "Муроҷиат",
+      "lis": "ЛИС",
+      "medications": "Доруҳо"
+    }
+  },
+  "common": {
+    "buttons": {
+      "cancel": "Бекор кардан",
+      "save": "Сабт кардан",
+      "update": "Навсозӣ",
+      "search": "Ҷустуҷӯ",
+      "clear": "Тоза кардан",
+      "generate": "Ҳисобот эҷод кардан",
+      "export": "Экспорт ба Excel"
+    }
+  },
+  "passport": {
+    "fields": {
+      "inn": { "label": "ИНН", "placeholder": "ИНН ворид кунед" },
+      "patientName": {
+        "label": "Номи бемор",
+        "placeholder": "Фамилия Ном Насли падар"
+      },
+      "birthDate": { "label": "Санаи таваллуд", "placeholder": "ДД.ММ.СССС" },
+      "doctorName": {
+        "label": "Номи духтур",
+        "placeholder": "Номи духтурро ворид кунед"
+      },
+      "hospital": {
+        "label": "Муассисаи тиббӣ",
+        "placeholder": "Номи муассиса"
+      },
+      "corporate": { "label": "Муштарии корпоративӣ", "placeholder": "" },
+      "address": { "label": "Суроға", "placeholder": "Суроға ворид кунед" },
+      "gender": { "label": "Ҷинс", "male": "Мард", "female": "Зан" },
+      "phone": { "label": "Телефон", "placeholder": "+996 XXX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "example@mail.com" },
+      "diagnosis": {
+        "label": "Диагноз",
+        "placeholder": "Диагнозро ворид кунед"
+      },
+      "note": {
+        "label": "Тавсияи сабткунанда",
+        "placeholder": "Шарҳи шумо..."
+      },
+      "discountPercent": { "label": "Скидка (%)", "placeholder": "0" },
+      "discountAmount": { "label": "Маблағи скидка", "placeholder": "0" },
+      "card": { "label": "Картаи дисконт", "placeholder": "Рақами карта" },
+      "collector": {
+        "label": "Номи шахси гирифтани намуна",
+        "placeholder": "Ном ворид кунед"
+      }
+    }
+  },
+  "registry": {
+    "filters": {
+      "from": "Аз",
+      "to": "То",
+      "inn": { "label": "ИНН бемор", "placeholder": "ИНН ворид кунед" },
+      "fio": { "label": "Номи бемор", "placeholder": "Номи пурра ворид кунед" },
+      "phone": {
+        "label": "Телефони бемор",
+        "placeholder": "Телефон ворид кунед"
+      },
+      "qr": { "placeholder": "Ҷустуҷӯ бо QR код" }
+    },
+    "analysis": {
+      "department": "Шӯъба",
+      "number": "Рақам",
+      "analysis": "Таҳлил",
+      "package": "Пакет",
+      "cito": "CITO"
+    },
+    "table": {
+      "columns": {
+        "date": "Санаи тирке",
+        "corCode": "Кор. код",
+        "fio": "Ном",
+        "inn": "ИНН",
+        "gen": "Ҷинс",
+        "dateBirth": "Санаи таваллуд",
+        "phone": "Телефон",
+        "email": "Email",
+        "address": "Суроға",
+        "diagnoz": "Диагноз",
+        "comm": "Шарҳ",
+        "punkt": "Пункт",
+        "skidka": "Скидка",
+        "percent": "%",
+        "reg": "Рег.",
+        "corpClient": "Корп.",
+        "medUch": "Мед.",
+        "doctor": "Доктор"
+      }
+    }
+  },
+  "medications": {
+    "table": {
+      "name": "Номи",
+      "form": "Шакли",
+      "dosage": "Доза",
+      "quantity": "Миқдори",
+      "price": "Нархи",
+      "manufacturer": "Истеҳсолкунанда"
+    }
+  },
+  "reports": {
+    "filters": {
+      "search": "Ҷустуҷӯ",
+      "from": "Аз",
+      "to": "То"
+    },
+    "table": {
+      "date": "Сана",
+      "corCode": "Кор. Код",
+      "fio": "Номи пурра",
+      "inn": "ИНН",
+      "gen": "Ҷинс",
+      "dateBirth": "Санаи таваллуд",
+      "phone": "Телефон",
+      "email": "Email",
+      "punkt": "Пункт",
+      "skidka": "Афзоиш",
+      "reg": "Рег.",
+      "doctor": "Доктор"
+    }
+  }
+}

@@ -11,15 +11,31 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import MedicalServicesOutlinedIcon from "@mui/icons-material/MedicalServicesOutlined";
 
 export const menuItems = [
-  { key: "calendar", label: "Календарь", icon: CalendarMonthOutlinedIcon },
-  { key: "registration", label: "Регистрация", icon: PersonAddOutlinedIcon },
-  { key: "registry", label: "Реестр", icon: AssignmentOutlinedIcon },
-  { key: "treatment", label: "Лечение", icon: LocalHospitalOutlinedIcon },
-  { key: "stationary", label: "Стационар", icon: LocalShippingOutlinedIcon },
-  { key: "lis", label: "ЛИС", icon: MedicalServicesOutlinedIcon },
-  { key: "medications", label: "Медикаменты", icon: PlaylistAddOutlinedIcon },
-  { key: "reports", label: "Отчёты", icon: AssessmentOutlinedIcon },
-  { key: "analytics", label: "Аналитика", icon: AnalyticsOutlinedIcon },
-  { key: "settings", label: "Настройки", icon: SettingsOutlinedIcon },
-  { key: "help", label: "Помощь", icon: HelpOutlineOutlinedIcon },
+  { key: "calendar", label: "menu.calendar", icon: CalendarMonthOutlinedIcon },
+  {
+    key: "registration",
+    label: "menu.registration",
+    icon: PersonAddOutlinedIcon,
+  },
+  { key: "registry", label: "menu.registry", icon: AssignmentOutlinedIcon },
+  {
+    key: "treatment",
+    label: "menu.treatment",
+    icon: LocalHospitalOutlinedIcon,
+  },
+  {
+    key: "stationary",
+    label: "menu.stationary",
+    icon: LocalShippingOutlinedIcon,
+  },
+  { key: "lis", label: "menu.lis", icon: MedicalServicesOutlinedIcon },
+  {
+    key: "medications",
+    label: "menu.medications",
+    icon: PlaylistAddOutlinedIcon,
+  },
+  { key: "reports", label: "menu.reports", icon: AssessmentOutlinedIcon },
+  { key: "analytics", label: "menu.analytics", icon: AnalyticsOutlinedIcon },
+  { key: "settings", label: "menu.settings", icon: SettingsOutlinedIcon },
+  { key: "help", label: "menu.help", icon: HelpOutlineOutlinedIcon },
 ];

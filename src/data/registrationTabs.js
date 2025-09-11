@@ -1,19 +1,47 @@
-import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined"; // паспорт/данные
-import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined"; // амбулаторная
-import PaymentOutlinedIcon from "@mui/icons-material/PaymentOutlined"; // оплата
-import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined"; // история
-import CallOutlinedIcon from "@mui/icons-material/CallOutlined"; // звонки
-import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined"; // обращение/образование
-import MedicalServicesOutlinedIcon from "@mui/icons-material/MedicalServicesOutlined"; // ЛИС
-import MedicationOutlinedIcon from "@mui/icons-material/MedicationOutlined"; // медикаменты
+import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
+import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
+import PaymentOutlinedIcon from "@mui/icons-material/PaymentOutlined";
+import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
+import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import MedicalServicesOutlinedIcon from "@mui/icons-material/MedicalServicesOutlined";
+import MedicationOutlinedIcon from "@mui/icons-material/MedicationOutlined";
 
 export const registrationTabs = [
-  { key: "passport", icon: BadgeOutlinedIcon, value: "Паспорт данные" },
-  { key: "ambulatory", icon: LocalHospitalOutlinedIcon, value: "Амбулаторная" },
-  { key: "payment", icon: PaymentOutlinedIcon, value: "Оплата" },
-  { key: "history", icon: HistoryOutlinedIcon, value: "История" },
-  { key: "calls", icon: CallOutlinedIcon, value: "Звонки" },
-  { key: "education", icon: SchoolOutlinedIcon, value: "Обращение" },
-  { key: "lis", icon: MedicalServicesOutlinedIcon, value: "ЛИС" },
-  { key: "medications", icon: MedicationOutlinedIcon, value: "Медикаменты" },
+  {
+    key: "passport",
+    label: "tabs.registration.passport",
+    icon: BadgeOutlinedIcon,
+  },
+  {
+    key: "ambulatory",
+    label: "tabs.registration.ambulatory",
+    icon: LocalHospitalOutlinedIcon,
+  },
+  {
+    key: "payment",
+    label: "tabs.registration.payment",
+    icon: PaymentOutlinedIcon,
+  },
+  {
+    key: "history",
+    label: "tabs.registration.history",
+    icon: HistoryOutlinedIcon,
+  },
+  { key: "calls", label: "tabs.registration.calls", icon: CallOutlinedIcon },
+  {
+    key: "education",
+    label: "tabs.registration.education",
+    icon: SchoolOutlinedIcon,
+  },
+  {
+    key: "lis",
+    label: "tabs.registration.lis",
+    icon: MedicalServicesOutlinedIcon,
+  },
+  {
+    key: "medications",
+    label: "tabs.registration.medications",
+    icon: MedicationOutlinedIcon,
+  },
 ];

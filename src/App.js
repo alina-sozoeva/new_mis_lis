@@ -3,8 +3,13 @@ import React, { useState } from "react";
 import { pages } from "./router";
 import { Tooltip, AppBar, Toolbar, Typography, Box } from "@mui/material";
 import { menuItems } from "./data";
+import { Lang } from "./components";
+import { useTranslation } from "react-i18next";
+import "./i18n";
 
 export default function App() {
+  const { t } = useTranslation();
+
   const [activeTab, setActiveTab] = useState("calendar");
 
   const ActivePage = pages[activeTab];
@@ -27,8 +32,9 @@ export default function App() {
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h6">
-            {menuItems.find((t) => t.key === activeTab)?.label}
+            {t(menuItems.find((t) => t.key === activeTab)?.label)}
           </Typography>
+          <Lang />
         </Toolbar>
       </AppBar>
 
@@ -51,7 +57,7 @@ export default function App() {
                 onClick={() => setActiveTab(tab.key)}
                 sx={{ mb: 2, cursor: "pointer" }}
               >
-                <Tooltip title={tab.label} placement="right">
+                <Tooltip title={t(tab.label)} placement="right">
                   <Icon color={activeTab === tab.key ? "primary" : "inherit"} />
                 </Tooltip>
               </Box>
