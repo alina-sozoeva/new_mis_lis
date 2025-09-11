@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import {
-  CssVarsProvider,
-  Typography,
-  Grid,
-  Divider,
-  Button,
-} from "@mui/joy";
+import { CssVarsProvider, Typography, Grid, Divider, Button } from "@mui/joy";
 import Inputs from "../../components/Editors/inputs.jsx";
 import styles from "./Passport.module.scss";
 
@@ -30,7 +24,7 @@ export const Passport = () => {
           padding: "30px",
           background: "#fff",
           borderRadius: "16px",
-          marginTop: "20px"
+          marginTop: "20px",
         }}
       >
         {/* Заголовок */}
@@ -40,37 +34,58 @@ export const Passport = () => {
 
         <Grid container spacing={2}>
           {/* ИНН */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ИНН" required labelPosition="left" placeholder="Введите ИНН" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="ИНН"
+              required
+              labelPosition="left"
+              placeholder="Введите ИНН"
+            />
           </Grid>
-
           {/* ФИО пациента */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ФИО пациента" labelPosition="left" placeholder="Фамилия Имя Отчество" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="ФИО пациента"
+              labelPosition="left"
+              placeholder="Фамилия Имя Отчество"
+            />
           </Grid>
-
           {/* Дата рождения */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Дата рождения" labelPosition="left" placeholder="ДД.ММ.ГГГГ" type="date" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Дата рождения"
+              labelPosition="left"
+              placeholder="ДД.ММ.ГГГГ"
+              type="date"
+            />
           </Grid>
-
           {/* ФИО врача */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="ФИО врача" labelPosition="left" placeholder="Введите ФИО врача" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="ФИО врача"
+              labelPosition="left"
+              placeholder="Введите ФИО врача"
+            />
           </Grid>
-
           {/* Медицинское учреждение */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={8}>
-            <Inputs label="Медицинское учреждение" labelPosition="left" placeholder="Название учреждения" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={8}>
+            <Inputs
+              label="Медицинское учреждение"
+              labelPosition="left"
+              placeholder="Название учреждения"
+            />
           </Grid>
-
-      sderdfsxvf
- {/* Адрес */}
-          <Grid style={{marginBottom:"0"}} xs={7}>
-            <Inputs label="Адрес" labelPosition="left" placeholder="Введите адрес" />
+          sderdfsxvf
+          {/* Адрес */}
+          <Grid style={{ marginBottom: "0" }} xs={7}>
+            <Inputs
+              label="Адрес"
+              labelPosition="left"
+              placeholder="Введите адрес"
+            />
           </Grid>
           {/* Пол */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={5}>
+          <Grid style={{ marginBottom: "0" }} xs={12} md={5}>
             <Typography level="body-sm" sx={{ mb: 1 }}>
               Пол
             </Typography>
@@ -97,52 +112,80 @@ export const Passport = () => {
               </label>
             </div>
           </Grid>
-
-         
-
           {/* Телефон */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Телефон" labelPosition="left" placeholder="+996 XXX XX XX XX" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Телефон"
+              labelPosition="left"
+              placeholder="+996 XXX XX XX XX"
+            />
           </Grid>
-
           {/* Email */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Email" labelPosition="left" placeholder="example@mail.com" type="email" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Email"
+              labelPosition="left"
+              placeholder="example@mail.com"
+              type="email"
+            />
           </Grid>
-
           {/* Диагноз */}
-          <Grid style={{marginBottom:"0"}} xs={12}>
-            <Inputs label="Диагноз" labelPosition="left" placeholder="Введите диагноз" />
+          <Grid style={{ marginBottom: "0" }} xs={12}>
+            <Inputs
+              label="Диагноз"
+              labelPosition="left"
+              placeholder="Введите диагноз"
+            />
           </Grid>
-
           {/* Примечание */}
-          <Grid style={{marginBottom:"0"}} xs={12}>
-            <Inputs label="Примечание регистратора" labelPosition="left" placeholder="Ваш комментарий..." />
+          <Grid style={{ marginBottom: "0" }} xs={12}>
+            <Inputs
+              label="Примечание регистратора"
+              labelPosition="left"
+              placeholder="Ваш комментарий..."
+            />
           </Grid>
-
           {/* Скидка */}
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Скидка (%)" labelPosition="left" placeholder="0" type="number" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Скидка (%)"
+              labelPosition="left"
+              placeholder="0"
+              type="number"
+            />
           </Grid>
-          <Grid style={{marginBottom:"0"}} xs={12} md={6}>
-            <Inputs label="Сумма скидки" labelPosition="left" placeholder="0" type="number" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Сумма скидки"
+              labelPosition="left"
+              placeholder="0"
+              type="number"
+            />
           </Grid>
-
           {/* Дисконтная карта */}
-          <Grid style={{marginBottom:"0"}}  xs={12} md={6}>
-            <Inputs label="Дисконтная карта" labelPosition="left" placeholder="Номер карты" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="Дисконтная карта"
+              labelPosition="left"
+              placeholder="Номер карты"
+            />
           </Grid>
-
           {/* ФИО проводившего забор */}
-          <Grid style={{marginBottom:"0"}}  xs={12} md={6}>
-            <Inputs label="ФИО проводившего забор" labelPosition="left" placeholder="Введите ФИО" />
+          <Grid style={{ marginBottom: "0" }} xs={12} md={6}>
+            <Inputs
+              label="ФИО проводившего забор"
+              labelPosition="left"
+              placeholder="Введите ФИО"
+            />
           </Grid>
         </Grid>
 
         <Divider sx={{ my: 3 }} />
 
         {/* Кнопки */}
-        <div style={{ display: "flex", gap: "12px", justifyContent: "flex-end" }}>
+        <div
+          style={{ display: "flex", gap: "12px", justifyContent: "flex-end" }}
+        >
           <Button variant="outlined" color="neutral">
             Отмена
           </Button>
